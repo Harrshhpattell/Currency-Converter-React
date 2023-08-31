@@ -1,19 +1,27 @@
 /* navbar */
 .navbar {
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 2.5rem;
+  padding: 0rem 2rem;
   border-radius: 10px;
   box-shadow: 1px 2px 17px -8px #000;
+  position: sticky;
+  background-color: #fff;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-style: italic;
+  min-width: fit-content;
 }
 
-.navbar aS button {
-  padding: 0.5rem 2rem;
+.navbar a button {
+  padding: 0.5rem 1rem;
   font-size: 1rem;
   border-radius: 10px;
   background-color: rgb(31, 31, 31);
@@ -26,4 +34,66 @@
   transform: scale(1.1);
   background-color: #fff;
   color: rgb(31, 31, 31);
+}
+
+/* main  */
+.main {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 5%;
+}
+
+.main div {
+  font-family: "Roboto", sans-serif;
+  /* padding: 0rem 2.5rem; */
+  width: 50%;
+}
+
+.main .heading .main-head {
+  font-size: 6vw;
+  line-height: 0.5rem;
+  border: 1px solid #000;
+  border-right: none;
+  border-radius: 30px;
+  padding: 3%;
+  width: 100%;
+}
+
+.main .heading .main-head #sec {
+  margin-left: 10vw;
+}
+
+.main .heading span {
+  position: relative;
+}
+
+.main .heading span img {
+  width: 5rem;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.main .icon {
+  width: 50vw;
+}
+
+.main .icon img {
+  width: 100%;
+}
+@media (max-width: 650px) {
+  .main {
+    flex-direction: column;
+  }
+  .main div {
+    width: 100%;
+  }
+  .main .heading .main-head {
+    border: none;
+    font-size: 10vw;
+  }
+  .main .heading span img {
+    display: none;
+  }
 }
