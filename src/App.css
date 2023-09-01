@@ -42,7 +42,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1% 5%;
+  padding: 0 5%;
 }
 
 .main div {
@@ -96,4 +96,51 @@
   .main .heading span img {
     display: none;
   }
+  .main .heading .main-head #sec {
+    margin-left: 30vw;
+  }
+}
+
+/* currency converter section */
+.curr-con-sec {
+  background-color: aliceblue;
+  margin: 1%;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.curr-con-sec .curr-from {
+  display: grid;
+  column-gap: 1.6rem;
+  grid-template-columns: 4.8rem 10rem 15rem;
+}
+
+.curr-from img {
+  width: 100%;
+}
+
+.curr-from select {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: none;
+  font-size: 2rem;
+}
+
+.curr-from select option {
+  background-color: #f0f0f0;
+  color: #232323;
+  font-size: 1rem;
+}
+
+.curr-from input[type="number"] {
+  border: none;
+  padding: 5%;
+  font-size: 2rem;
+  border-radius: 30px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
 }
